@@ -1,7 +1,7 @@
 FROM alpine:3.18 AS compile-image
 
 RUN apk update
-RUN apk add --no-cache make automake gcc g++ subversion python3-dev libffi-dev rust cargo
+RUN apk add --no-cache make automake gcc g++ subversion python3-dev libffi-dev rust cargo py3-pydantic
 
 WORKDIR /app
 
